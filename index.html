@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Слоти</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="playContainer">
+        <div class="doors">
+          <div class="door">
+            <div class="boxes"></div>
+          </div>
+
+          <div class="door">
+            <div class="boxes"></div>
+          </div>
+
+          <div class="door">
+            <div class="boxes"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="play__area">
+        <div class="play">
+            <div id="winAmmount">Выгрыш <span>0</span></div>
+          <div>
+            <div>Ставка <span>10</span></div>
+            <input
+              type="range"
+              min="10"
+              max="1000"
+              step="1"
+              value="10"
+              id="betAmmount"
+              oninput="this.parentElement.childNodes[1].childNodes[1].textContent = this.value"
+            />
+          </div>
+          <button id="spinner" class="betAmmount">Играть</button>
+        </div>
+        <div class="profile">
+          <span class="profile__balance" id="profile_balance"
+            >Ваш баланс : <span>0</span></span
+          >
+          <span class="help" onclick="openHelp()">ℹ️</span>
+        </div>
+      </div>
+
+      <div class="helpScreen" id="helpScreen" >
+        <div class="helpScreen_text">
+           <div class="header">
+            Расчет победы
+           </div>
+           <span>Проигрыш - вычитание ставки из баланса</span>
+           <span>Наличие ❌ - Проигрыш</span>
+           <span>❌❌❌ - Проигрыш х2</span>
+           <span>✳️✳️❓ - ставка х2 пример (💵😻😻)</span>
+           <span>✳️✳️✳️ - умножение баланса на ставку</span>
+           <span>7️⃣7️⃣7️⃣ - умножение баланса на 777 + x2 ставка</span>
+           <span>💵💵💵 - умножение баланса x1000 + x2 ставка</span>
+            <button onclick="closeHelp();" class="closeHelp">Закрыть</button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="static/index.js"></script>
+  </body>
+</html>

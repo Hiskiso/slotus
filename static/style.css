@@ -1,0 +1,239 @@
+
+body {
+    margin:0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    background-color: #20242d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.doors {
+  display: flex;
+}
+
+.door {
+  background: #fafafa;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+
+  border-radius: 1ex;
+  margin: 1ch;
+}
+
+.boxes {
+  /* transform: translateY(0); */
+  transition: transform 1s ease-in-out;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.playContainer
+{
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height: 400px;
+    background-color: #272d39;
+    
+}
+.play__area
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.profile
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin: 0px 0px 25px 25px;
+    border-radius: 20px;
+    width:200px;
+    padding: 20px 30px;
+    background-color: #272d39;
+}
+.profile__balance
+{
+    color:#fff;
+    font-weight: 500;
+    font-size: 17px;
+}
+button:disabled{
+    background-color: #2f3d56;
+}
+.play
+{
+    color: lemonchiffon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:25px;
+    position: relative;
+    width:200px;
+    height: max-content;
+    border-radius: 20px;
+    padding: 30px;
+    background-color:#272d39;
+    gap: 15px;
+}
+
+.help{
+    padding: 3px;
+    border-radius: 4px;
+    background: #4986f5;
+    cursor: pointer;
+}
+
+.betAmmount
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4986f5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fail
+{
+    background-color:rgb(239, 65, 65)
+}
+.sucess
+{
+    background-color:rgb(67, 244, 117)
+}
+.fail-hack
+{
+    background-color:rgb(239 65 65 / 35%)
+}
+.sucess-hack
+{
+    background-color:rgb(83 185 112 / 17%)
+}
+
+.helpScreen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 36, 43, 0.5);
+}
+
+.helpScreen_text {
+    color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 7px;
+    border-radius: 20px;
+    background-color: rgba(32, 36, 43, 0.75);
+}
+
+.header{
+    
+    color: rgb(239, 65, 65);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.closeHelp{
+    align-self: center;
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    background-color: #4986f5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+@media(max-width:750px){
+    .failscreen__text
+    {
+        font-size: 30px;
+    }
+    .ipt__mines
+    {
+        width:208px;
+    }
+    .ipt__amonut
+    {
+        width:208px;
+    }
+    .playContainer
+    {
+        margin-top: 12px;
+        width:400px;
+        height: 400px;
+    }
+    .wrapper
+    {
+        flex-direction: column;
+    }
+    .play{
+        margin-left: 0px;
+        width:250px;
+        margin-bottom: 12px;
+    }
+    .profile
+    {
+        width:250px;
+        margin-left: 0px;
+    }
+    .play__area
+    {
+        display: flex;
+        align-items: center;
+        width:90%;
+        position: relative;
+        top:50px;
+    }
+}
+@media(max-width:470px){
+    .playContainer
+    {
+        width:300px;
+        height: 300px;
+    }
+}
+@media(max-width:380px){
+    .playContainer
+    {
+        width:250px;
+        height: 250px;
+    }
+}

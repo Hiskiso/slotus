@@ -44,6 +44,8 @@ function endGame() {
     winAmmount.childNodes[1].textContent = (balance - tempBal).toLocaleString()
    winItems= []
    
+betAmmount.max = balance
+   
 }
 
 profile_balance.innerText = "Ваш баланс : " + balance.toLocaleString()
